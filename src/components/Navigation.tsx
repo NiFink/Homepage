@@ -10,7 +10,7 @@ function Navigation({ homepageClick, projectClick }: NavigationProps) {
             <nav className="navbar sticky-top navbar-expand-lg bg-body-tertiary" data-bs-theme="dark">
                 <div className="container-fluid justify-content-center">
                     <button className="btn" onClick={homepageClick}>
-                        <img src="homepage/Logo.jpeg" alt="NilsFink" width="40" height="40" />
+                        <img src="homepage/images/Logo.jpeg" alt="NilsFink" width="40" height="40" />
                     </button>
 
                     <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">

@@ -11,9 +11,9 @@ function Projects({}: ProjectsPops){
             <div className="row row-cols-1 row-cols-md-3 g-4" style={styleCard}>
             <div className="col">
                     <div className="card text-bg-dark mb-3">
-                        <img src="homepage/images/MyWebsite.jpg" className="card-img-top" alt="..."></img>
+                        <img src="../public/images/MyWebsite.jpg" className="card-img-top" alt="..."></img>
                         <div className="card-body">
-                            <h5 className="card-title"><b>MyWebsite</b></h5>
+                            <h5 className="card-title"><b>MyWeb site</b></h5>
                             <h6 className="card-subtitle mb-2 text-body-light">2024 | Typescript/Javascript, React, Vite</h6>
                             <p className="card-text">Here, you can discover everything about Nils and his endeavors</p>
                             <a href="https://github.com/NiFink/homepage" className="btn btn-light">Go to Git</a>
@@ -21,7 +21,7 @@ function Projects({}: ProjectsPops){
                     </div>
                     <div className="col">
                     <div className="card text-bg-dark mb-3">
-                        <img src="homepage/images/LittleAdventure2.png" className="card-img-top" alt="..."></img>
+                        <img src="LittleAdventure2.png" className="card-img-top" alt="..."></img>
                         <div className="card-body">
                             <h5 className="card-title"><b>A little Adventure</b></h5>
                             <h6 className="card-subtitle mb-2 text-body-light">2021 | C#, Windows Forms</h6>
@@ -34,7 +34,7 @@ function Projects({}: ProjectsPops){
                 </div>
                 <div className="col">
                     <div className="card text-bg-dark mb-3">
-                    <img src="homepage/images/SpeisenOase-Logo.jpg" className="card-img-top" alt="..."></img>
+                    <img src="./images/SpeisenOase-Logo.jpg" className="card-img-top" alt="..."></img>
                     <div className="card-body">
                         <h5 className="card-title"><b>Speisenoase</b></h5>
                         <h6 className="card-subtitle mb-2 text-body-light">2023 | Java, JavaFX, JSON</h6>
@@ -45,7 +45,7 @@ function Projects({}: ProjectsPops){
                 </div>
                 <div className="col">
                     <div className="card text-bg-dark mb-3">
-                        <img src="homepage/images/Rayleigh.jpeg" className="card-img-top" alt="..."></img>
+                        <img src="images/Rayleigh.jpeg" className="card-img-top" alt="..."></img>
                         <div className="card-body">
                             <h5 className="card-title"><b>Rayleigh</b></h5>
                             <h6 className="card-subtitle mb-2 text-body-light">2022 | C#, Windows Forms</h6>
