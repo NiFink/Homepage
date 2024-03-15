@@ -16,7 +16,7 @@ function Homepage({aboutmeClick, projectsClick}: HomepagePops){
             </div>
             <div className="carousel-inner">
                 <div className="carousel-item active">
-                    <img src="src/images/AboutMe.jpg" className="d-block w-100" alt="..." onClick={aboutmeClick}></img>
+                    <img src="images/AboutMe.jpg" className="d-block w-100" alt="..." onClick={aboutmeClick}></img>
                 </div>
                 <div className="carousel-item">
                     <img src="src/images/Projects2.jpg" className="d-block w-100" alt="..." onClick={projectsClick}></img>
