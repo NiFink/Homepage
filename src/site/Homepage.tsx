@@ -19,10 +19,10 @@ function Homepage({aboutmeClick, projectsClick}: HomepagePops){
                     <img src="homepage/AboutMe.jpg" className="d-block w-100" alt="..." onClick={aboutmeClick}></img>
                 </div>
                 <div className="carousel-item">
-                    <img src="homepage/src/images/AboutMe.jpg" className="d-block w-100" alt="..." onClick={projectsClick}></img>
+                    <img src="homepage/AboutMe.jpg" className="d-block w-100" alt="..." onClick={projectsClick}></img>
                 </div>
                 <div className="carousel-item">
-                    <img src="src\images\MyWebsite.jpg" className="d-block w-100" alt="..." onClick={aboutmeClick}></img>
+                    <img src="homepage/src/images/MyWebsite.jpg" className="d-block w-100" alt="..." onClick={aboutmeClick}></img>
                 </div>
                 <div className="carousel-item">
                     <img src="./images/Git.jpg" className="d-block w-100" alt="..." onClick={aboutmeClick}></img>
