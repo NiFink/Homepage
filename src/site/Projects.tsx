@@ -8,10 +8,11 @@ function Projects({}: ProjectsPops){
 
 
     return <div> 
+            <img src="../public/AboutMe.jpg" alt="??" />
             <div className="row row-cols-1 row-cols-md-3 g-4" style={styleCard}>
             <div className="col">
                     <div className="card text-bg-dark mb-3">
-                        <img src="AboutMe.jpg" className="card-img-top" alt="..."></img>
+                        <img src="aboutme.jpg" className="card-img-top" alt="..."></img>
                         <div className="card-body">
                             <h5 className="card-title"><b>MyWebsite</b></h5>
                             <h6 className="card-subtitle mb-2 text-body-light">2024 | Typescript/Javascript, React, Vite</h6>
