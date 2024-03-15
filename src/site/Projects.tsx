@@ -8,7 +8,6 @@ function Projects({}: ProjectsPops){
 
 
     return <div> 
-            <img src="../public/AboutMe.jpg" alt="??" />
             <div className="row row-cols-1 row-cols-md-3 g-4" style={styleCard}>
             <div className="col">
                     <div className="card text-bg-dark mb-3">
@@ -56,18 +55,6 @@ function Projects({}: ProjectsPops){
                         </div>
                     </div>
                 </div>
-                <div className="col">
-                    <div className="card text-bg-dark mb-3">
-                        <img src="./AboutMe.JPG" className="card-img-top" alt="..."></img>
-                        <div className="card-body">
-                            <h5 className="card-title"><b>Rayleigh</b></h5>
-                            <h6 className="card-subtitle mb-2 text-body-light">2022 | C#, Windows Forms</h6>
-                            <p className="card-text">Your trusted voice assistant, ready to help and simplify your daily tasks with just a word.</p>
-                            <a href="https://github.com/NiFink/Rayleigh" className="btn btn-light">Go to Git</a>
-                        </div>
-                    </div>
-                </div>
-
             </div>
         </div>
 }
