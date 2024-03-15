@@ -1,26 +1,22 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import { useState } from 'react'
+import './App.css'
+import Navigation from "./components/Navigation";
+import Homepage from "./site/Homepage";
+import AboutMe from "./site/AboutMe";
+import Projects from "./site/Projects";
+
 
 function App() {
+  const [currentSite, setSite] = useState("Homepage")
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Moin meister
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <Navigation projectClick={() => setSite("Projects") } homepageClick={() => setSite("Homepage")}></Navigation>
+      {currentSite === "Homepage" && <Homepage aboutmeClick={() => setSite("AboutMe")} projectsClick={() => setSite("Projects")}></Homepage>}
+      {currentSite === "AboutMe" && <AboutMe homepageClick={() => setSite("Homepage")}></AboutMe>}
+      {currentSite === "Projects" && <Projects homepageClick={() => setSite("Homepage")}></Projects>}
+      
     </div>
-  );
+  )
 }
 
-export default App;
+export default App
