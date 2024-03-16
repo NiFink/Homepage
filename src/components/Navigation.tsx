@@ -1,9 +1,10 @@
 interface NavigationProps {
     homepageClick?: () => void;
     projectClick?: () => void;
+    contactClick?: () => void;
 }
 
-function Navigation({ homepageClick, projectClick }: NavigationProps) {
+function Navigation({ homepageClick, projectClick, contactClick }: NavigationProps) {
 
     return (
         <div> 
@@ -31,7 +32,7 @@ function Navigation({ homepageClick, projectClick }: NavigationProps) {
                                 <a className="nav-link" href="https://gitlab.mi.hdm-stuttgart.de/">GitLab</a>
                             </li>
                             <li className="nav-item">
-                                <button className="nav-link disabled" aria-disabled="true">Contact</button>
+                                <button className="nav-link disabled" aria-disabled="true" onClick={contactClick}>Contact</button>
                             </li>
                         </ul>
                     </div>
