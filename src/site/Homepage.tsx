@@ -22,10 +22,10 @@ function Homepage({aboutmeClick, projectsClick}: HomepagePops){
                     <img src="./images/Projects2.jpg" className="d-block w-100" alt="..." onClick={projectsClick}></img>
                 </div>
                 <div className="carousel-item">
-                    <img src="./images/Git.jpg" className="d-block w-100" alt="..." onClick={aboutmeClick}></img>
+                    <img src="./images/Github.jpg" className="d-block w-100" alt="..." onClick={aboutmeClick}></img>
                 </div>
                 <div className="carousel-item">
-                    <img src="./images/Git.jpg" className="d-block w-100" alt="..." onClick={aboutmeClick}></img>
+                    <img src="./images/GitLab.jpg" className="d-block w-100" alt="..." onClick={aboutmeClick}></img>
                 </div>
             </div>
             <button className="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev" >
