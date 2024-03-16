@@ -16,16 +16,16 @@ function Homepage({aboutmeClick, projectsClick}: HomepagePops){
             </div>
             <div className="carousel-inner">
                 <div className="carousel-item active">
-                    <img src="homepage/images/AboutMe.jpg" className="d-block w-100" alt="..." onClick={aboutmeClick}></img>
+                    <img src="./images/AboutMe.jpg" className="d-block w-100" alt="..." onClick={aboutmeClick}></img>
                 </div>
                 <div className="carousel-item">
-                    <img src="homepage/images/Projects2.jpg" className="d-block w-100" alt="..." onClick={projectsClick}></img>
+                    <img src="./images/Projects2.jpg" className="d-block w-100" alt="..." onClick={projectsClick}></img>
                 </div>
                 <div className="carousel-item">
-                    <img src="homepage/images/Git.jpg" className="d-block w-100" alt="..." onClick={aboutmeClick}></img>
+                    <img src="./images/Git.jpg" className="d-block w-100" alt="..." onClick={aboutmeClick}></img>
                 </div>
                 <div className="carousel-item">
-                    <img src="homepage/images/Git.jpg" className="d-block w-100" alt="..." onClick={aboutmeClick}></img>
+                    <img src="./images/Git.jpg" className="d-block w-100" alt="..." onClick={aboutmeClick}></img>
                 </div>
             </div>
             <button className="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev" >
