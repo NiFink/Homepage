@@ -5,7 +5,6 @@ interface NavigationProps {
 }
 
 function Navigation({ homepageClick, projectClick, contactClick }: NavigationProps) {
-
     return (
         <div> 
             <nav className="navbar sticky-top navbar-expand-lg bg-body-tertiary" data-bs-theme="dark">
