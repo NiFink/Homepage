@@ -7,7 +7,7 @@ function Projects({}: ProjectsPops){
     const styleCard = {padding: "10px"};
 
 
-    return <div> 
+    return <div className="mt-5"> 
             <div className="row row-cols-1 row-cols-md-3 g-4" style={styleCard}>
             <div className="col">
                     <div className="card text-bg-dark mb-3">

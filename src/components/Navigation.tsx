@@ -6,7 +6,7 @@ interface NavigationProps {
 function Navigation({ homepageClick, projectClick, contactClick }: NavigationProps) {
     return (
         <div> 
-            <nav className="navbar sticky-top navbar-expand-lg bg-body-tertiary" data-bs-theme="dark">
+            <nav className="navbar fixed-top navbar-expand-lg bg-body-tertiary " data-bs-theme="dark">
                 <div className="container-fluid">
                     <button className="btn" onClick={homepageClick}>
                         <img src="./images/Logo.jpeg" alt="NilsFink" width="40" height="40" />

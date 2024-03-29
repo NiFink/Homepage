@@ -4,10 +4,11 @@ interface HomepagePops{
 }
 
 function Homepage({aboutmeClick, projectsClick}: HomepagePops){
-
+    const styletop ={paddingTop: "60px"}
     return (
-    <div>     
-        <div id="carouselExampleIndicators" className="carousel slide">
+    <div className="mt-5">     
+        <h1 className="display-1 text-center">Welcome to the homepage of Nils Fink</h1>
+        <div id="carouselExampleIndicators" className="carousel slide mt-5">
             <div className="carousel-indicators">
                 <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" className="active" aria-current="true" aria-label="Slide 1"></button>
                 <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
@@ -41,11 +42,48 @@ function Homepage({aboutmeClick, projectsClick}: HomepagePops){
                 <span className="visually-hidden">Next</span>
             </button>
         </div> 
-        <div>
-            <h1 className="display-1 text-center">Welcome to the homepage of Nils Fink</h1>
-            <h2 className="text-center">a passionate developer and creator who has built this site to represent himself and showcase his world of programming, as well as personal projects. Dive in and explore Nils' captivating journey through the realm of technology, his innovative ideas, and his pursuit of excellence. From impressive programming ventures to insights into his life and passions - here, you can discover everything about Nils and his endeavors. </h2>
-            <h1>Welcome to his digital stage!</h1>
-        </div> 
+        <div className="pt-5">
+            <div className="card text-bg-dark ">
+                <div className="row g-0 ">
+                    <div className="col-md-4 ">
+                    <img src="./images/MyWebsite.jpg" className="img-fluid rounded-start" alt="..."></img>
+                    </div>
+                    <div className="col-md-8">
+                    <div className="card-body">
+                        <div className="card-header">
+                            Current project
+                        </div>
+                        
+                        <h2 className="card-title">Californiagram</h2>
+                        <p className="card-text">A stunning app capturing and sharing the beauty of California through effortless and captivating photo experiences</p>
+                        <a href="https://github.com/NiFink/Californiagram" className="card text-bg-light disabled">Go to Git</a>
+                        <p className="card-text"><small className="text-bg-dark">Last updated 3 mins ago</small></p>
+                    </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div className="pt-1">
+            <div className="card text-bg-dark ">
+                <div className="row g-0 ">
+                    <div className="col-md-4 ">
+                    <img src="./images/MyWebsite.jpg" className="img-fluid rounded-start" alt="..."></img>
+                    </div>
+                    <div className="col-md-8">
+                    <div className="card-body">
+                        <div className="card-header">
+                            Latest project
+                        </div>
+                        
+                        <h2 className="card-title">Homepage</h2>
+                        <p className="card-text">Here, you can discover everything about Nils and his endeavors</p>
+                        <a href="https://github.com/NiFink/Californiagram" className="card text-bg-light disabled">Go to Git</a>
+                        <p className="card-text"><small className="text-bg-dark">Last updated 3 mins ago</small></p>
+                    </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
     );
 }
