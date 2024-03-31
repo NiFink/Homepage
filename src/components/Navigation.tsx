@@ -1,21 +1,41 @@
+import React, { useState, useEffect, useRef } from 'react'
 interface NavigationProps {
     homepageClick?: () => void;
     projectClick?: () => void;
     contactClick?: () => void;
 }
 function Navigation({ homepageClick, projectClick, contactClick }: NavigationProps) {
+    const [isNavbarOpen, setIsNavbarOpen] = useState(false);
+    const navbarRef = useRef<HTMLDivElement>(null);
+
+    useEffect(() => {
+        const handleClickOutside = (event: MouseEvent) => {
+            if (navbarRef.current && !navbarRef.current.contains(event.target as Node)) {
+                setIsNavbarOpen(false);
+            }
+        };
+
+        document.addEventListener('mousedown', handleClickOutside);
+        return () => {
+            document.removeEventListener('mousedown', handleClickOutside);
+        };
+    }, []);
+
+    const toggleNavbar = () => {
+        setIsNavbarOpen(!isNavbarOpen);
+    };
     return (
         <div> 
-            <nav className="navbar fixed-top navbar-expand-lg bg-body-tertiary " data-bs-theme="dark">
+            <nav className={`navbar fixed-top navbar-expand-lg bg-body-tertiary ${isNavbarOpen ? 'show' : ''}`} data-bs-theme="dark" ref={navbarRef}>
                 <div className="container-fluid">
-                    <button className="btn" onClick={homepageClick}>
+                    <button className="btn" onClick={toggleNavbar}>
                         <img src="./images/Logo.jpeg" alt="NilsFink" width="40" height="40" />
                     </button>
 
-                    <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <button className="navbar-toggler" type="button" onClick={toggleNavbar}>
                         <span className="navbar-toggler-icon"></span>
                     </button>
-                    <div className="collapse navbar-collapse" id="navbarNav">
+                    <div className={`collapse navbar-collapse ${isNavbarOpen ? 'show' : ''}`} id="navbarNav">
                         <ul className="navbar-nav ">
                             <li className="nav-item">
                                 <button className="nav-link active w-100" aria-current="page" onClick={homepageClick}>Home</button>
@@ -30,7 +50,7 @@ function Navigation({ homepageClick, projectClick, contactClick }: NavigationPro
                                 <a className="nav-link" href="https://gitlab.mi.hdm-stuttgart.de/">GitLab</a>
                             </li>
                             <li className="nav-item">
-                                <button className="nav-link disabled w-100" aria-disabled="true" onClick={contactClick}>Contact</button>
+                                <button className="nav-link disabled w-100" onClick={contactClick}>Contact</button>
                             </li>
                         </ul>
                     </div>

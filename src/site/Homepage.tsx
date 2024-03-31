@@ -4,11 +4,11 @@ interface HomepagePops{
 }
 
 function Homepage({aboutmeClick, projectsClick}: HomepagePops){
-    const styletop ={paddingTop: "60px"}
+    const styletop ={paddingTop: "70px"}
     return (
-    <div className="mt-5">     
+    <div style={styletop}>     
         <h1 className="display-1 text-center">Welcome to the homepage of Nils Fink</h1>
-        <div id="carouselExampleIndicators" className="carousel slide mt-5">
+        <div id="carouselExampleIndicators" className="carousel slide mt-5 p-2">
             <div className="carousel-indicators">
                 <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" className="active" aria-current="true" aria-label="Slide 1"></button>
                 <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
@@ -46,7 +46,7 @@ function Homepage({aboutmeClick, projectsClick}: HomepagePops){
             <div className="card text-bg-dark ">
                 <div className="row g-0 ">
                     <div className="col-md-4 ">
-                    <img src="./images/MyWebsite.jpg" className="img-fluid rounded-start" alt="..."></img>
+                    <img src="./images/Californiagram.png" className="img-fluid rounded-start" alt=""></img>
                     </div>
                     <div className="col-md-8">
                     <div className="card-body">
@@ -56,7 +56,7 @@ function Homepage({aboutmeClick, projectsClick}: HomepagePops){
                         
                         <h2 className="card-title">Californiagram</h2>
                         <p className="card-text">A stunning app capturing and sharing the beauty of California through effortless and captivating photo experiences</p>
-                        <a href="https://github.com/NiFink/Californiagram" className="card text-bg-light disabled">Go to Git</a>
+                        <a href="https://github.com/NiFink/Californiagram" className="card text-bg-light w-50 mx-auto">Go to Git</a>
                         <p className="card-text"><small className="text-bg-dark">Last updated 3 mins ago</small></p>
                     </div>
                     </div>
@@ -67,7 +67,7 @@ function Homepage({aboutmeClick, projectsClick}: HomepagePops){
             <div className="card text-bg-dark ">
                 <div className="row g-0 ">
                     <div className="col-md-4 ">
-                    <img src="./images/MyWebsite.jpg" className="img-fluid rounded-start" alt="..."></img>
+                    <img src="./images/Logo.jpeg" className="img-fluid rounded-start" alt="..."></img>
                     </div>
                     <div className="col-md-8">
                     <div className="card-body">
@@ -77,7 +77,7 @@ function Homepage({aboutmeClick, projectsClick}: HomepagePops){
                         
                         <h2 className="card-title">Homepage</h2>
                         <p className="card-text">Here, you can discover everything about Nils and his endeavors</p>
-                        <a href="https://github.com/NiFink/Californiagram" className="card text-bg-light disabled">Go to Git</a>
+                        <a href="https://github.com/NiFink/Californiagram" className="card text-bg-light w-50 mx-auto">Go to Git</a>
                         <p className="card-text"><small className="text-bg-dark">Last updated 3 mins ago</small></p>
                     </div>
                     </div>
