@@ -1,10 +1,12 @@
-import React, { useState, useEffect, useRef } from 'react'
+import React, { useState, useEffect, useRef } from 'react';
+
 interface NavigationProps {
     homepageClick?: () => void;
     projectClick?: () => void;
-    contactClick?: () => void;
+    aboutmeClick?: () => void;
 }
-function Navigation({ homepageClick, projectClick, contactClick }: NavigationProps) {
+
+function Navigation({ homepageClick, projectClick, aboutmeClick }: NavigationProps) {
     const [isNavbarOpen, setIsNavbarOpen] = useState(false);
     const navbarRef = useRef<HTMLDivElement>(null);
 
@@ -24,8 +26,20 @@ function Navigation({ homepageClick, projectClick, contactClick }: NavigationPro
     const toggleNavbar = () => {
         setIsNavbarOpen(!isNavbarOpen);
     };
+
+    const handleAboutMeClick = () => {
+        const contactSection = document.getElementById('contact');
+        if (contactSection) {
+            contactSection.scrollIntoView({ behavior: 'smooth' });
+        }
+        if (aboutmeClick) {
+            aboutmeClick();
+        }
+        setIsNavbarOpen(false);
+    };
+
     return (
-        <div> 
+        <div>
             <nav className={`navbar fixed-top navbar-expand-lg bg-body-tertiary ${isNavbarOpen ? 'show' : ''}`} data-bs-theme="dark" ref={navbarRef}>
                 <div className="container-fluid">
                     <button className="btn" onClick={toggleNavbar}>
@@ -50,7 +64,7 @@ function Navigation({ homepageClick, projectClick, contactClick }: NavigationPro
                                 <a className="nav-link" href="https://gitlab.mi.hdm-stuttgart.de/">GitLab</a>
                             </li>
                             <li className="nav-item">
-                                <button className="nav-link disabled w-100" onClick={contactClick}>Contact</button>
+                                <a className="nav-link w-100" href="#contact" onClick={handleAboutMeClick}>Contact</a>
                             </li>
                         </ul>
                     </div>
@@ -61,4 +75,3 @@ function Navigation({ homepageClick, projectClick, contactClick }: NavigationPro
 }
 
 export default Navigation;
-

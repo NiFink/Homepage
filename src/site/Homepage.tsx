@@ -63,23 +63,23 @@ function Homepage({aboutmeClick, projectsClick}: HomepagePops){
                 </div>
             </div>
         </div>
-        <div className="pt-1">
+        <div className="pt-3">
             <div className="card text-bg-dark ">
                 <div className="row g-0 ">
-                    <div className="col-md-4 ">
-                    <img src="./images/Logo.jpeg" className="img-fluid rounded-start" alt="..."></img>
-                    </div>
                     <div className="col-md-8">
-                    <div className="card-body">
-                        <div className="card-header">
-                            Latest project
+                        <div className="card-body">
+                            <div className="card-header">
+                                <h6>Latest project</h6>
+                            </div>
+                            
+                            <h1 className="card-title">Homepage</h1>
+                            <h6 className="card-text">Here, you can discover everything about Nils and his endeavors</h6>
+                            <a href="https://github.com/NiFink/Californiagram" className="card text-bg-light w-50 mx-auto">Go to Git</a>
+                            <h6 className="card-text"><small className="text-bg-dark">Last updated 3 mins ago</small></h6>
                         </div>
-                        
-                        <h2 className="card-title">Homepage</h2>
-                        <p className="card-text">Here, you can discover everything about Nils and his endeavors</p>
-                        <a href="https://github.com/NiFink/Californiagram" className="card text-bg-light w-50 mx-auto">Go to Git</a>
-                        <p className="card-text"><small className="text-bg-dark">Last updated 3 mins ago</small></p>
                     </div>
+                    <div className="col-md-4 ">
+                        <img src="./images/Logo.jpeg" className="img-fluid rounded-start" alt="..." ></img>
                     </div>
                 </div>
             </div>
