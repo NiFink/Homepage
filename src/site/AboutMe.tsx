@@ -19,7 +19,7 @@ function AboutMe({homepageClick}: AboutMePops){
                 <h1 className="text-center" id="contact">Contact</h1>
                 <h3 className="text-center">If you have any questions, feel free to send me an email at nils@team-fink.de or direct message me on <a className="h3" href="https://www.linkedin.com/in/nils-fink-42220b257/">LinkedIn</a></h3>      
             </div>
-            
+            <button className="btn btn-dark" onClick={homepageClick}>Home</button>
         </div>
 }
 export default AboutMe;

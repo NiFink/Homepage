@@ -28,17 +28,6 @@ function Navigation({ homepageClick, projectClick, aboutmeClick, imprintClick}: 
         setIsNavbarOpen(!isNavbarOpen);
     };
 
-    const handleAboutMeClick = () => {
-        const contactSection = document.getElementById('contact');
-        if (contactSection) {
-            contactSection.scrollIntoView({ behavior: 'smooth' });
-        }
-        if (aboutmeClick) {
-            aboutmeClick();
-        }
-        setIsNavbarOpen(false);
-    };
-
     return (
         <div>
             <nav className={`navbar fixed-top navbar-expand-lg bg-body-tertiary ${isNavbarOpen ? 'show' : ''}`} data-bs-theme="dark" ref={navbarRef}>
@@ -65,7 +54,7 @@ function Navigation({ homepageClick, projectClick, aboutmeClick, imprintClick}: 
                                 <a className="nav-link" href="https://gitlab.mi.hdm-stuttgart.de/">GitLab</a>
                             </li>
                             <li className="nav-item">
-                                <a className="nav-link w-100" href="#contact" onClick={handleAboutMeClick}>Contact</a>
+                                <button className="nav-link w-100" onClick={aboutmeClick}>Contact</button>
                             </li>
                             <li className="nav-item">
                                 <button className="nav-link w-100" onClick={imprintClick}>Imprint</button>
