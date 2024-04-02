@@ -23,7 +23,7 @@ function Imprint({homepageClick}: ImpressumProps){
     This website does not collect or process any personal data from its users. You can browse anonymously without providing any personal information.</p>
 
     <p><strong>Image Credits:</strong><br />
-    The images used on this website are sourced from Bing Generator, GitHub, and GitLab.</p>
+    The images used on this website are sourced from Bing Generator, Nintendo, GitHub, and GitLab.</p>
 
         </footer>
     </div>

@@ -5,6 +5,17 @@ interface ProjectsPops{
 function Projects({}: ProjectsPops){
     return <div style={{paddingTop: "80px", marginLeft:"15px", marginRight:"15px"}}> 
             <div className="row row-cols-1 row-cols-md-3 g-4">
+            <div className="col">
+                    <div className="card text-bg-dark mb-3">
+                        <img src="./images/Californiagram.png" className="card-img-top" alt="..."></img>
+                        <div className="card-body">
+                            <h5 className="card-title"><b>Californiagram</b></h5>
+                            <h6 className="card-subtitle mb-2 text-body-light">2024 | Typescript, Angular</h6>
+                            <p className="card-text">A stunning app capturing and sharing the beauty of California through effortless and captivating photo experiences.</p>
+                            <a href="https://github.com/NiFink/Californiagram.git" className="btn btn-light">Go to Git</a>
+                        </div>
+                    </div>
+                </div>
                 <div className="col">
                     <div className="card text-bg-dark mb-3">
                         <img src="./images/MyWebsite.jpg" className="card-img-top" alt="..."></img>
@@ -50,17 +61,7 @@ function Projects({}: ProjectsPops){
                         </div>
                     </div>
                 </div>
-                <div className="col">
-                    <div className="card text-bg-dark mb-3">
-                        <img src="./images/Californiagram.png" className="card-img-top" alt="..."></img>
-                        <div className="card-body">
-                            <h5 className="card-title"><b>Californiagram</b></h5>
-                            <h6 className="card-subtitle mb-2 text-body-light">2024 | Typescript, Angular</h6>
-                            <p className="card-text">A stunning app capturing and sharing the beauty of California through effortless and captivating photo experiences.</p>
-                            <a href="https://github.com/NiFink/Californiagram.git" className="btn btn-light">Go to Git</a>
-                        </div>
-                    </div>
-                </div>
+
             </div>
         </div>
 }
