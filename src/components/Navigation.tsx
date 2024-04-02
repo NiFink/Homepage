@@ -4,9 +4,10 @@ interface NavigationProps {
     homepageClick?: () => void;
     projectClick?: () => void;
     aboutmeClick?: () => void;
+    imprintClick?: () => void;
 }
 
-function Navigation({ homepageClick, projectClick, aboutmeClick }: NavigationProps) {
+function Navigation({ homepageClick, projectClick, aboutmeClick, imprintClick}: NavigationProps) {
     const [isNavbarOpen, setIsNavbarOpen] = useState(false);
     const navbarRef = useRef<HTMLDivElement>(null);
 
@@ -65,6 +66,9 @@ function Navigation({ homepageClick, projectClick, aboutmeClick }: NavigationPro
                             </li>
                             <li className="nav-item">
                                 <a className="nav-link w-100" href="#contact" onClick={handleAboutMeClick}>Contact</a>
+                            </li>
+                            <li className="nav-item">
+                                <button className="nav-link w-100" onClick={imprintClick}>Impressum</button>
                             </li>
                         </ul>
                     </div>

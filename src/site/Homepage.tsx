@@ -4,7 +4,7 @@ interface HomepagePops{
 }
 
 function Homepage({aboutmeClick, projectsClick}: HomepagePops){
-    const styletop ={paddingTop: "70px"}
+    const styletop ={paddingTop: "80px"}
     return (
     <div style={styletop}>     
         <h1 className="display-1 text-center">Welcome to the homepage of Nils Fink</h1>
@@ -46,10 +46,10 @@ function Homepage({aboutmeClick, projectsClick}: HomepagePops){
             <div className="card text-bg-dark ">
                 <div className="row g-0 ">
                     <div className="col-md-4 ">
-                    <img src="./images/Californiagram.png" className="img-fluid rounded-start" alt=""></img>
+                    <img src="./images/Californiagram.png" className="img-fluid rounded-start" alt="..."></img>
                     </div>
                     <div className="col-md-8">
-                    <div className="card-body">
+                    <div className="card-body justify-content-center align-items-center">
                         <div className="card-header">
                             Current project
                         </div>
