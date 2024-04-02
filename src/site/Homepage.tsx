@@ -53,10 +53,9 @@ function Homepage({aboutmeClick, projectsClick}: HomepagePops){
                         <div className="card-header">
                             Current project
                         </div>
-                        
-                        <h2 className="card-title">Californiagram</h2>
-                        <p className="card-text">A stunning app capturing and sharing the beauty of California through effortless and captivating photo experiences</p>
-                        <a href="https://github.com/NiFink/Californiagram" className="card text-bg-light w-50 mx-auto">Go to Git</a>
+                        <h1 className="card-title">Californiagram</h1>
+                        <h5 className="card-text">A stunning app capturing and sharing the beauty of California through effortless and captivating photo experiences</h5>
+                        <a href="https://github.com/NiFink/Californiagram" className="btn text-bg-light w-50 mx-auto">Go to Git</a>
                         <p className="card-text"><small className="text-bg-dark">Last updated 3 mins ago</small></p>
                     </div>
                     </div>
@@ -73,8 +72,8 @@ function Homepage({aboutmeClick, projectsClick}: HomepagePops){
                             </div>
                             
                             <h1 className="card-title">Homepage</h1>
-                            <h6 className="card-text">Here, you can discover everything about Nils and his endeavors</h6>
-                            <a href="https://github.com/NiFink/Californiagram" className="card text-bg-light w-50 mx-auto">Go to Git</a>
+                            <h5 className="card-text">Here, you can discover everything about Nils and his endeavors</h5>
+                            <a href="https://github.com/NiFink/Californiagram" className="btn text-bg-light w-50 mx-auto">Go to Git</a>
                             <h6 className="card-text"><small className="text-bg-dark">Last updated 3 mins ago</small></h6>
                         </div>
                     </div>
