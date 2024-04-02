@@ -68,7 +68,7 @@ function Navigation({ homepageClick, projectClick, aboutmeClick, imprintClick}: 
                                 <a className="nav-link w-100" href="#contact" onClick={handleAboutMeClick}>Contact</a>
                             </li>
                             <li className="nav-item">
-                                <button className="nav-link w-100" onClick={imprintClick}>Impressum</button>
+                                <button className="nav-link w-100" onClick={imprintClick}>Imprint</button>
                             </li>
                         </ul>
                     </div>

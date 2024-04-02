@@ -3,7 +3,7 @@ interface ProjectsPops{
 }
 
 function Projects({}: ProjectsPops){
-    return <div style={{paddingTop: "70px", marginLeft:"15px", marginRight:"15px"}}> 
+    return <div style={{paddingTop: "80px", marginLeft:"15px", marginRight:"15px"}}> 
             <div className="row row-cols-1 row-cols-md-3 g-4">
                 <div className="col">
                     <div className="card text-bg-dark mb-3">

@@ -44,12 +44,12 @@ function Homepage({aboutmeClick, projectsClick}: HomepagePops){
         </div> 
         <div className="pt-5">
             <div className="card text-bg-dark ">
-                <div className="row g-0 ">
+                <div className="row g-0 justify-content-center align-items-center">
                     <div className="col-md-4 ">
-                    <img src="./images/Californiagram.png" className="img-fluid rounded-start" alt="..."></img>
+                    <img src="./images/Californiagram.png" className="img-fluid rounded-start" alt="..." ></img>
                     </div>
                     <div className="col-md-8">
-                    <div className="card-body justify-content-center align-items-center">
+                    <div className="card-body ">
                         <div className="card-header">
                             Current project
                         </div>
@@ -65,7 +65,7 @@ function Homepage({aboutmeClick, projectsClick}: HomepagePops){
         </div>
         <div className="pt-3">
             <div className="card text-bg-dark ">
-                <div className="row g-0 ">
+                <div className="row g-0 justify-content-center align-items-center">
                     <div className="col-md-8">
                         <div className="card-body">
                             <div className="card-header">
