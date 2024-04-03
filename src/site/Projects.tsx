@@ -11,7 +11,7 @@ function Projects({}: ProjectsPops){
                         <div className="card-body">
                             <h5 className="card-title"><b>Californiagram</b></h5>
                             <h6 className="card-subtitle mb-2 text-body-light">2024 | Typescript, Angular</h6>
-                            <p className="card-text">A stunning app capturing and sharing the beauty of California through effortless and captivating photo experiences.</p>
+                            <p className="card-text">An app showcasing California's beauty through captivating photo experiences.</p>
                             <a href="https://github.com/NiFink/Californiagram.git" className="btn btn-light">Go to Git</a>
                         </div>
                     </div>
@@ -56,7 +56,7 @@ function Projects({}: ProjectsPops){
                         <div className="card-body">
                             <h5 className="card-title"><b>A little Adventure</b></h5>
                             <h6 className="card-subtitle mb-2 text-body-light">2021 | C#, Windows Forms</h6>
-                            <p className="card-text">Enter the pixelated realm of an intrepid knight on a noble quest to safeguard his village from the encroaching creatures of danger and adversity.</p>
+                            <p className="card-text">A courageous knight valiantly defends his village against perilous creatures of darkness.</p>
                             <a href="https://github.com/NiFink/projektGame.git" className="btn btn-light">Go to Git</a>
                         </div>
                     </div>

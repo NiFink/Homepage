@@ -51,7 +51,7 @@ function Navigation({ homepageClick, projectClick, aboutmeClick, imprintClick}: 
                                 <a className="nav-link" href="https://github.com/NiFink">Github</a>
                             </li>
                             <li className="nav-item">
-                                <a className="nav-link" href="https://gitlab.mi.hdm-stuttgart.de/">GitLab</a>
+                                <a className="nav-link" href="https://gitlab.mi.hdm-stuttgart.de/nf056">GitLab</a>
                             </li>
                             <li className="nav-item">
                                 <button className="nav-link w-100" onClick={aboutmeClick}>Contact</button>
