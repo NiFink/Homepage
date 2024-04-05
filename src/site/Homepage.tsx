@@ -7,7 +7,6 @@ function Homepage({aboutmeClick, projectsClick}: HomepagePops){
     const styletop ={paddingTop: "80px"}
     return (
     <div style={styletop}>     
-        <h1 className="display-1 text-center">Welcome to the homepage of Nils Fink</h1>
         <div id="carouselExampleIndicators" className="carousel slide mt-5 p-2">
             <div className="carousel-indicators">
                 <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" className="active" aria-current="true" aria-label="Slide 1"></button>

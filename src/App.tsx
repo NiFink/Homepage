@@ -14,7 +14,7 @@ function App() {
       <Navigation projectClick={() => setSite("Projects") } homepageClick={() => setSite("Homepage") } aboutmeClick={() => setSite("AboutMe")} imprintClick={() => setSite("Imprint")}></Navigation>
       {currentSite === "Homepage" && <Homepage aboutmeClick={() => setSite("AboutMe")} projectsClick={() => setSite("Projects")}></Homepage>}
       {currentSite === "AboutMe" && <AboutMe homepageClick={() => setSite("Homepage")}></AboutMe>}
-      {currentSite === "Projects" && <Projects homepageClick={() => setSite("Homepage")}></Projects>}
+      {currentSite === "Projects" && <Projects></Projects>}
       {currentSite === "Imprint" && <Imprint homepageClick={() => setSite("Homepage")}></Imprint>}
     </div>
   )

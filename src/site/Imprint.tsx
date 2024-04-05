@@ -26,6 +26,7 @@ function Imprint({homepageClick}: ImpressumProps){
     The images used on this website are sourced from Bing Generator, Nintendo, GitHub, and GitLab.</p>
 
         </footer>
+        <button className="btn btn-dark" onClick={homepageClick}>Back</button>
     </div>
 }
 export default Imprint;
