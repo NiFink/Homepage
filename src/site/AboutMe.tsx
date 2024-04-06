@@ -5,13 +5,11 @@ interface AboutMePops{
 function AboutMe({homepageClick}: AboutMePops){
     return (
         <div className="text-center">
-            <div style={{height: "70px"}}></div> 
-            <div className="position-relative overflow-hidden">
-                <img className="parallax-bg" src="./images/AboutMe.jpg.jpg"></img>
-                <div className="parallax-text">
-                    <h3 className="text-center">Hey, I am a passionate developer and creator who has built this site to represent himself and showcase his world of programming, as well as personal projects. Dive in and explore Nils' captivating journey through the realm of technology, his innovative ideas, and his pursuit of excellence. From impressive programming ventures to insights into his life and passions - here, you can discover everything about Nils and his endeavors. Welcome to his digital stage!</h3>
-                </div>
-            </div>      
+            <div style={{height: "70px"}}></div>   
+            <img src="./images/AboutMe.jpg" className="d-block w-100"></img>
+            <div className="parallax-text">
+                <h3 className="text-center">Hey, I am a passionate developer and creator who has built this site to represent himself and showcase his world of programming, as well as personal projects. Dive in and explore Nils' captivating journey through the realm of technology, his innovative ideas, and his pursuit of excellence. From impressive programming ventures to insights into his life and passions - here, you can discover everything about Nils and his endeavors. Welcome to his digital stage!</h3>
+            </div>    
             <div style={{height: "200px"}}></div> 
             <div className="position-relative overflow-hidden">
                 <div className="parallax-bg" style={{backgroundImage: 'url("./images/AboutMe.jpg.jpg")'}}></div>

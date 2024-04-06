@@ -6,8 +6,8 @@ interface HomepagePops{
 function Homepage({aboutmeClick, projectsClick}: HomepagePops){
     const styletop ={paddingTop: "80px"}
     return (
-    <div style={styletop}>     
-        <div id="carouselExampleIndicators" className="carousel slide mt-5 p-2">
+    <div style={styletop}>  
+        <div id="carouselExampleIndicators" className="carousel slide  pb-2">
             <div className="carousel-indicators">
                 <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" className="active" aria-current="true" aria-label="Slide 1"></button>
                 <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
